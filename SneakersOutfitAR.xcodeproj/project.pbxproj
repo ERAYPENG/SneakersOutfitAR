@@ -3,23 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0473A3A025E5692B0062FF61 /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A39F25E5692B0062FF61 /* UIColor+Common.swift */; };
+		0473A3A625E5698B0062FF61 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3A525E5698B0062FF61 /* BaseViewController.swift */; };
+		0473A3AE25E56A770062FF61 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3AD25E56A770062FF61 /* Search.storyboard */; };
+		0473A3B125E56A820062FF61 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3B025E56A820062FF61 /* AR.storyboard */; };
+		0473A3B425E56A8F0062FF61 /* FileManage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3B325E56A8F0062FF61 /* FileManage.storyboard */; };
+		0473A3B725E56AB60062FF61 /* SearchMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3B625E56AB60062FF61 /* SearchMainViewController.swift */; };
+		0473A3BA25E56ADA0062FF61 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */; };
+		0473A3BE25E56B010062FF61 /* FileManageMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3BD25E56B010062FF61 /* FileManageMainViewController.swift */; };
 		04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA333E25DFE62900407C4B /* AppDelegate.swift */; };
 		04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA334225DFE62900407C4B /* LogInViewController.swift */; };
 		04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334725DFE62B00407C4B /* Assets.xcassets */; };
 		04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */; };
+		A9DE82CB1B85CDE9BC843703 /* Pods_SneakersOutfitAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6C41A902187C1B9DB19B43 /* Pods_SneakersOutfitAR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0473A39F25E5692B0062FF61 /* UIColor+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
+		0473A3A525E5698B0062FF61 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0473A3AD25E56A770062FF61 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		0473A3B025E56A820062FF61 /* AR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
+		0473A3B325E56A8F0062FF61 /* FileManage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileManage.storyboard; sourceTree = "<group>"; };
+		0473A3B625E56AB60062FF61 /* SearchMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMainViewController.swift; sourceTree = "<group>"; };
+		0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraViewController.swift; sourceTree = "<group>"; };
+		0473A3BD25E56B010062FF61 /* FileManageMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManageMainViewController.swift; sourceTree = "<group>"; };
 		04BA333B25DFE62900407C4B /* SneakersOutfitAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakersOutfitAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BA333E25DFE62900407C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BA334225DFE62900407C4B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		04BA334725DFE62B00407C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BA334A25DFE62B00407C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BA334C25DFE62B00407C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		066B1C176691B661D7758F46 /* Pods-SneakersOutfitAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersOutfitAR.release.xcconfig"; path = "Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR.release.xcconfig"; sourceTree = "<group>"; };
+		543EA6D715C611831DD377E5 /* Pods-SneakersOutfitAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersOutfitAR.debug.xcconfig"; path = "Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR.debug.xcconfig"; sourceTree = "<group>"; };
+		BC6C41A902187C1B9DB19B43 /* Pods_SneakersOutfitAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakersOutfitAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +47,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DE82CB1B85CDE9BC843703 /* Pods_SneakersOutfitAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0473A39E25E569000062FF61 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				0473A39F25E5692B0062FF61 /* UIColor+Common.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		0473A3A425E569490062FF61 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0473A3A525E5698B0062FF61 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0473A3A925E569C90062FF61 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0473A3B625E56AB60062FF61 /* SearchMainViewController.swift */,
+				0473A3AD25E56A770062FF61 /* Search.storyboard */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		0473A3AA25E569E80062FF61 /* LogInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04BA334225DFE62900407C4B /* LogInViewController.swift */,
+			);
+			path = LogInViewController;
+			sourceTree = "<group>";
+		};
+		0473A3AB25E56A070062FF61 /* ARViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */,
+				0473A3B025E56A820062FF61 /* AR.storyboard */,
+			);
+			path = ARViewController;
+			sourceTree = "<group>";
+		};
+		0473A3AC25E56A130062FF61 /* FileManageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0473A3BD25E56B010062FF61 /* FileManageMainViewController.swift */,
+				0473A3B325E56A8F0062FF61 /* FileManage.storyboard */,
+			);
+			path = FileManageViewController;
+			sourceTree = "<group>";
+		};
+		0473A3C525E56CD80062FF61 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04BA333E25DFE62900407C4B /* AppDelegate.swift */,
+				04BA334725DFE62B00407C4B /* Assets.xcassets */,
+				04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */,
+				04BA334C25DFE62B00407C4B /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		04BA333225DFE62800407C4B = {
 			isa = PBXGroup;
 			children = (
 				04BA333D25DFE62900407C4B /* SneakersOutfitAR */,
 				04BA333C25DFE62900407C4B /* Products */,
+				58DF665BF52B042CE93F70A6 /* Pods */,
+				C60E0B100327667652630878 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +137,32 @@
 		04BA333D25DFE62900407C4B /* SneakersOutfitAR */ = {
 			isa = PBXGroup;
 			children = (
-				04BA333E25DFE62900407C4B /* AppDelegate.swift */,
-				04BA334225DFE62900407C4B /* LogInViewController.swift */,
-				04BA334725DFE62B00407C4B /* Assets.xcassets */,
-				04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */,
-				04BA334C25DFE62B00407C4B /* Info.plist */,
+				0473A3A425E569490062FF61 /* Base */,
+				0473A39E25E569000062FF61 /* extension */,
+				0473A3AA25E569E80062FF61 /* LogInViewController */,
+				0473A3A925E569C90062FF61 /* SearchViewController */,
+				0473A3AB25E56A070062FF61 /* ARViewController */,
+				0473A3AC25E56A130062FF61 /* FileManageViewController */,
+				0473A3C525E56CD80062FF61 /* Common */,
 			);
 			path = SneakersOutfitAR;
+			sourceTree = "<group>";
+		};
+		58DF665BF52B042CE93F70A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				543EA6D715C611831DD377E5 /* Pods-SneakersOutfitAR.debug.xcconfig */,
+				066B1C176691B661D7758F46 /* Pods-SneakersOutfitAR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C60E0B100327667652630878 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC6C41A902187C1B9DB19B43 /* Pods_SneakersOutfitAR.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BA334F25DFE62B00407C4B /* Build configuration list for PBXNativeTarget "SneakersOutfitAR" */;
 			buildPhases = (
+				E1DBF914764E07944F601B76 /* [CP] Check Pods Manifest.lock */,
 				04BA333725DFE62900407C4B /* Sources */,
 				04BA333825DFE62900407C4B /* Frameworks */,
 				04BA333925DFE62900407C4B /* Resources */,
+				79E6E6A1D481FCCF51C64BF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,19 +225,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */,
+				0473A3B425E56A8F0062FF61 /* FileManage.storyboard in Resources */,
+				0473A3AE25E56A770062FF61 /* Search.storyboard in Resources */,
 				04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */,
+				0473A3B125E56A820062FF61 /* AR.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79E6E6A1D481FCCF51C64BF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1DBF914764E07944F601B76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SneakersOutfitAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04BA333725DFE62900407C4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0473A3BA25E56ADA0062FF61 /* ARCameraViewController.swift in Sources */,
 				04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */,
+				0473A3B725E56AB60062FF61 /* SearchMainViewController.swift in Sources */,
+				0473A3A625E5698B0062FF61 /* BaseViewController.swift in Sources */,
+				0473A3A025E5692B0062FF61 /* UIColor+Common.swift in Sources */,
 				04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */,
+				0473A3BE25E56B010062FF61 /* FileManageMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +423,13 @@
 		};
 		04BA335025DFE62B00407C4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543EA6D715C611831DD377E5 /* Pods-SneakersOutfitAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9M7QA5C39;
-				INFOPLIST_FILE = SneakersOutfitAR/Info.plist;
+				INFOPLIST_FILE = SneakersOutfitAR/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,12 +443,13 @@
 		};
 		04BA335125DFE62B00407C4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066B1C176691B661D7758F46 /* Pods-SneakersOutfitAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9M7QA5C39;
-				INFOPLIST_FILE = SneakersOutfitAR/Info.plist;
+				INFOPLIST_FILE = SneakersOutfitAR/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
