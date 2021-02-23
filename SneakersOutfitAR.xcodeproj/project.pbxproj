@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049A374B25E4FEB500DAF545 /* UICloler+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A374A25E4FEB500DAF545 /* UICloler+Common.swift */; };
 		04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA333E25DFE62900407C4B /* AppDelegate.swift */; };
-		04BA334325DFE62900407C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA334225DFE62900407C4B /* ViewController.swift */; };
+		04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA334225DFE62900407C4B /* LogInViewController.swift */; };
 		04BA334625DFE62900407C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334425DFE62900407C4B /* Main.storyboard */; };
 		04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334725DFE62B00407C4B /* Assets.xcassets */; };
 		04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049A374A25E4FEB500DAF545 /* UICloler+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICloler+Common.swift"; sourceTree = "<group>"; };
 		04BA333B25DFE62900407C4B /* SneakersOutfitAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakersOutfitAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BA333E25DFE62900407C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04BA334225DFE62900407C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04BA334225DFE62900407C4B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		04BA334525DFE62900407C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04BA334725DFE62B00407C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BA334A25DFE62B00407C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,9 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049A374925E4FE9500DAF545 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				049A374A25E4FEB500DAF545 /* UICloler+Common.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
 		04BA333225DFE62800407C4B = {
 			isa = PBXGroup;
 			children = (
+				049A374925E4FE9500DAF545 /* extension */,
 				04BA333D25DFE62900407C4B /* SneakersOutfitAR */,
 				04BA333C25DFE62900407C4B /* Products */,
 			);
@@ -55,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				04BA333E25DFE62900407C4B /* AppDelegate.swift */,
-				04BA334225DFE62900407C4B /* ViewController.swift */,
+				04BA334225DFE62900407C4B /* LogInViewController.swift */,
 				04BA334425DFE62900407C4B /* Main.storyboard */,
 				04BA334725DFE62B00407C4B /* Assets.xcassets */,
 				04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */,
@@ -134,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BA334325DFE62900407C4B /* ViewController.swift in Sources */,
+				049A374B25E4FEB500DAF545 /* UICloler+Common.swift in Sources */,
+				04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */,
 				04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
