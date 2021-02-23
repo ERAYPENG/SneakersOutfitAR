@@ -3,54 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		049A374B25E4FEB500DAF545 /* UICloler+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A374A25E4FEB500DAF545 /* UICloler+Common.swift */; };
 		04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA333E25DFE62900407C4B /* AppDelegate.swift */; };
 		04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA334225DFE62900407C4B /* LogInViewController.swift */; };
-		04BA334625DFE62900407C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334425DFE62900407C4B /* Main.storyboard */; };
-=======
-		0415DA1F25E5128D00F17236 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DA1E25E5128D00F17236 /* LogInViewController.swift */; };
-		049A375225E4FFAE00DAF545 /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A375125E4FFAE00DAF545 /* UIColor+Common.swift */; };
-		049A375725E500F800DAF545 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A375625E500F800DAF545 /* BaseViewController.swift */; };
-		04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA333E25DFE62900407C4B /* AppDelegate.swift */; };
->>>>>>> feature/Log_in_VC
 		04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334725DFE62B00407C4B /* Assets.xcassets */; };
 		04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */; };
-		04D60AC325E54E9000B469CC /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D60AC225E54E9000B469CC /* Search.storyboard */; };
-		04D60AC625E54EC300B469CC /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D60AC525E54EC300B469CC /* AR.storyboard */; };
-		04D60AC925E54EDA00B469CC /* FileManage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D60AC825E54EDA00B469CC /* FileManage.storyboard */; };
-		04D60AD125E5535500B469CC /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D60AD025E5535500B469CC /* SearchPageViewController.swift */; };
-		2B67042D227D85FA31AD92FC /* Pods_SneakersOutfitAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFCCCB3218F8F143BB368E5 /* Pods_SneakersOutfitAR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		049A374A25E4FEB500DAF545 /* UICloler+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICloler+Common.swift"; sourceTree = "<group>"; };
 		04BA333B25DFE62900407C4B /* SneakersOutfitAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakersOutfitAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BA333E25DFE62900407C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BA334225DFE62900407C4B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		04BA334525DFE62900407C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-=======
-		0415DA1E25E5128D00F17236 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		049A375125E4FFAE00DAF545 /* UIColor+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
-		049A375625E500F800DAF545 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		04BA333B25DFE62900407C4B /* SneakersOutfitAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakersOutfitAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		04BA333E25DFE62900407C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
->>>>>>> feature/Log_in_VC
 		04BA334725DFE62B00407C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BA334A25DFE62B00407C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BA334C25DFE62B00407C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04D60AC225E54E9000B469CC /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		04D60AC525E54EC300B469CC /* AR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
-		04D60AC825E54EDA00B469CC /* FileManage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileManage.storyboard; sourceTree = "<group>"; };
-		04D60AD025E5535500B469CC /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
-		6B7AE05E68ECAA6079EA40BE /* Pods-SneakersOutfitAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersOutfitAR.release.xcconfig"; path = "Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR.release.xcconfig"; sourceTree = "<group>"; };
-		8724C3DD8B5CA73F126BD685 /* Pods-SneakersOutfitAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersOutfitAR.debug.xcconfig"; path = "Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR.debug.xcconfig"; sourceTree = "<group>"; };
-		BCFCCCB3218F8F143BB368E5 /* Pods_SneakersOutfitAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakersOutfitAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,57 +27,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B67042D227D85FA31AD92FC /* Pods_SneakersOutfitAR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
-		049A374925E4FE9500DAF545 /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				049A374A25E4FEB500DAF545 /* UICloler+Common.swift */,
-			);
-			name = extension;
-=======
-		049A375E25E5025C00DAF545 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				049A375625E500F800DAF545 /* BaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		049A376025E5027000DAF545 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				049A375125E4FFAE00DAF545 /* UIColor+Common.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		049A376225E5028600DAF545 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				04BA333E25DFE62900407C4B /* AppDelegate.swift */,
-				04BA334725DFE62B00407C4B /* Assets.xcassets */,
-				04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */,
-				04BA334C25DFE62B00407C4B /* Info.plist */,
-			);
-			path = Common;
->>>>>>> feature/Log_in_VC
-			sourceTree = "<group>";
-		};
 		04BA333225DFE62800407C4B = {
 			isa = PBXGroup;
 			children = (
-				049A374925E4FE9500DAF545 /* extension */,
 				04BA333D25DFE62900407C4B /* SneakersOutfitAR */,
 				04BA333C25DFE62900407C4B /* Products */,
-				056FE45E08D35C80FFAE9A3B /* Pods */,
-				93B74120821A42F25E6737F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,74 +52,13 @@
 		04BA333D25DFE62900407C4B /* SneakersOutfitAR */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				04BA333E25DFE62900407C4B /* AppDelegate.swift */,
 				04BA334225DFE62900407C4B /* LogInViewController.swift */,
-				04BA334425DFE62900407C4B /* Main.storyboard */,
 				04BA334725DFE62B00407C4B /* Assets.xcassets */,
 				04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */,
 				04BA334C25DFE62B00407C4B /* Info.plist */,
-=======
-				049A375E25E5025C00DAF545 /* Base */,
-				049A376025E5027000DAF545 /* Extension */,
-				04E25A4B25E53B8D0092EA9E /* LogInVC */,
-				04D60ACB25E54EFF00B469CC /* SearchVC */,
-				04D60ACC25E54F1800B469CC /* ARVC */,
-				04D60ACD25E54F3200B469CC /* FileManageVC */,
-				049A376225E5028600DAF545 /* Common */,
->>>>>>> feature/Log_in_VC
 			);
 			path = SneakersOutfitAR;
-			sourceTree = "<group>";
-		};
-		04D60ACB25E54EFF00B469CC /* SearchVC */ = {
-			isa = PBXGroup;
-			children = (
-				04D60AC225E54E9000B469CC /* Search.storyboard */,
-				04D60AD025E5535500B469CC /* SearchPageViewController.swift */,
-			);
-			path = SearchVC;
-			sourceTree = "<group>";
-		};
-		04D60ACC25E54F1800B469CC /* ARVC */ = {
-			isa = PBXGroup;
-			children = (
-				04D60AC525E54EC300B469CC /* AR.storyboard */,
-			);
-			path = ARVC;
-			sourceTree = "<group>";
-		};
-		04D60ACD25E54F3200B469CC /* FileManageVC */ = {
-			isa = PBXGroup;
-			children = (
-				04D60AC825E54EDA00B469CC /* FileManage.storyboard */,
-			);
-			path = FileManageVC;
-			sourceTree = "<group>";
-		};
-		04E25A4B25E53B8D0092EA9E /* LogInVC */ = {
-			isa = PBXGroup;
-			children = (
-				0415DA1E25E5128D00F17236 /* LogInViewController.swift */,
-			);
-			path = LogInVC;
-			sourceTree = "<group>";
-		};
-		056FE45E08D35C80FFAE9A3B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8724C3DD8B5CA73F126BD685 /* Pods-SneakersOutfitAR.debug.xcconfig */,
-				6B7AE05E68ECAA6079EA40BE /* Pods-SneakersOutfitAR.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		93B74120821A42F25E6737F0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BCFCCCB3218F8F143BB368E5 /* Pods_SneakersOutfitAR.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +68,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BA334F25DFE62B00407C4B /* Build configuration list for PBXNativeTarget "SneakersOutfitAR" */;
 			buildPhases = (
-				FE898EEB72A5F2460B5D2284 /* [CP] Check Pods Manifest.lock */,
 				04BA333725DFE62900407C4B /* Sources */,
 				04BA333825DFE62900407C4B /* Frameworks */,
 				04BA333925DFE62900407C4B /* Resources */,
-				52F582B4E77C8F956446A938 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,71 +119,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */,
-				04D60AC925E54EDA00B469CC /* FileManage.storyboard in Resources */,
 				04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */,
-				04D60AC325E54E9000B469CC /* Search.storyboard in Resources */,
-				04D60AC625E54EC300B469CC /* AR.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		52F582B4E77C8F956446A938 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE898EEB72A5F2460B5D2284 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SneakersOutfitAR-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04BA333725DFE62900407C4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				049A374B25E4FEB500DAF545 /* UICloler+Common.swift in Sources */,
 				04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */,
-=======
-				0415DA1F25E5128D00F17236 /* LogInViewController.swift in Sources */,
-				04D60AD125E5535500B469CC /* SearchPageViewController.swift in Sources */,
-				049A375725E500F800DAF545 /* BaseViewController.swift in Sources */,
-				049A375225E4FFAE00DAF545 /* UIColor+Common.swift in Sources */,
->>>>>>> feature/Log_in_VC
 				04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,13 +267,12 @@
 		};
 		04BA335025DFE62B00407C4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8724C3DD8B5CA73F126BD685 /* Pods-SneakersOutfitAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9M7QA5C39;
-				INFOPLIST_FILE = SneakersOutfitAR/Common/Info.plist;
+				INFOPLIST_FILE = SneakersOutfitAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,13 +286,12 @@
 		};
 		04BA335125DFE62B00407C4B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B7AE05E68ECAA6079EA40BE /* Pods-SneakersOutfitAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9M7QA5C39;
-				INFOPLIST_FILE = SneakersOutfitAR/Common/Info.plist;
+				INFOPLIST_FILE = SneakersOutfitAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
