@@ -168,7 +168,8 @@ extension LogInViewController {
 //MARK: Event
 extension LogInViewController {
     @objc private func didTouchUpInsideLogIn(sender: UIButton) {
-        
+        let arVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(identifier: "Main") as! MainViewController
+        self.view.window?.rootViewController = arVC
     }
     
     @objc private func didTouchUpInsideForgotPasswards(sender: UIButton) {

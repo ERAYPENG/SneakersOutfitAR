@@ -1,5 +1,5 @@
 //
-//  FileManageMainViewController.swift
+//  FileStorageMainViewController.swift
 //  SneakersOutfitAR
 //
 //  Created by ERAY on 2021/2/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FileManageMainViewController: UIViewController {
+class FileStorageMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045E00E025E6A50D00AC635D /* customTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E00DF25E6A50D00AC635D /* customTabBar.swift */; };
+		0467E39525E6688900CACFED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467E39425E6688900CACFED /* MainViewController.swift */; };
 		0473A3A025E5692B0062FF61 /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A39F25E5692B0062FF61 /* UIColor+Common.swift */; };
 		0473A3A625E5698B0062FF61 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3A525E5698B0062FF61 /* BaseViewController.swift */; };
-		0473A3AE25E56A770062FF61 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3AD25E56A770062FF61 /* Search.storyboard */; };
-		0473A3B125E56A820062FF61 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3B025E56A820062FF61 /* AR.storyboard */; };
-		0473A3B425E56A8F0062FF61 /* FileManage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3B325E56A8F0062FF61 /* FileManage.storyboard */; };
-		0473A3B725E56AB60062FF61 /* SearchMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3B625E56AB60062FF61 /* SearchMainViewController.swift */; };
+		0473A3AE25E56A770062FF61 /* ApplicationFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3AD25E56A770062FF61 /* ApplicationFlow.storyboard */; };
+		0473A3B725E56AB60062FF61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3B625E56AB60062FF61 /* SearchViewController.swift */; };
 		0473A3BA25E56ADA0062FF61 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */; };
-		0473A3BE25E56B010062FF61 /* FileManageMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3BD25E56B010062FF61 /* FileManageMainViewController.swift */; };
+		0473A3BE25E56B010062FF61 /* FileStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3BD25E56B010062FF61 /* FileStorageViewController.swift */; };
 		04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA333E25DFE62900407C4B /* AppDelegate.swift */; };
 		04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA334225DFE62900407C4B /* LogInViewController.swift */; };
 		04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334725DFE62B00407C4B /* Assets.xcassets */; };
@@ -23,14 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045E00DF25E6A50D00AC635D /* customTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTabBar.swift; sourceTree = "<group>"; };
+		0467E39425E6688900CACFED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0473A39F25E5692B0062FF61 /* UIColor+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
 		0473A3A525E5698B0062FF61 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		0473A3AD25E56A770062FF61 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		0473A3B025E56A820062FF61 /* AR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
-		0473A3B325E56A8F0062FF61 /* FileManage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileManage.storyboard; sourceTree = "<group>"; };
-		0473A3B625E56AB60062FF61 /* SearchMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMainViewController.swift; sourceTree = "<group>"; };
+		0473A3AD25E56A770062FF61 /* ApplicationFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplicationFlow.storyboard; sourceTree = "<group>"; };
+		0473A3B625E56AB60062FF61 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraViewController.swift; sourceTree = "<group>"; };
-		0473A3BD25E56B010062FF61 /* FileManageMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManageMainViewController.swift; sourceTree = "<group>"; };
+		0473A3BD25E56B010062FF61 /* FileStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageViewController.swift; sourceTree = "<group>"; };
 		04BA333B25DFE62900407C4B /* SneakersOutfitAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakersOutfitAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BA333E25DFE62900407C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BA334225DFE62900407C4B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -70,13 +70,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		0473A3A925E569C90062FF61 /* SearchViewController */ = {
+		0473A3A925E569C90062FF61 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0473A3B625E56AB60062FF61 /* SearchMainViewController.swift */,
-				0473A3AD25E56A770062FF61 /* Search.storyboard */,
+				0467E39425E6688900CACFED /* MainViewController.swift */,
+				045E00DF25E6A50D00AC635D /* customTabBar.swift */,
+				0473A3B625E56AB60062FF61 /* SearchViewController.swift */,
+				0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */,
+				0473A3BD25E56B010062FF61 /* FileStorageViewController.swift */,
+				0473A3AD25E56A770062FF61 /* ApplicationFlow.storyboard */,
 			);
-			path = SearchViewController;
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		0473A3AA25E569E80062FF61 /* LogInViewController */ = {
@@ -85,24 +89,6 @@
 				04BA334225DFE62900407C4B /* LogInViewController.swift */,
 			);
 			path = LogInViewController;
-			sourceTree = "<group>";
-		};
-		0473A3AB25E56A070062FF61 /* ARViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */,
-				0473A3B025E56A820062FF61 /* AR.storyboard */,
-			);
-			path = ARViewController;
-			sourceTree = "<group>";
-		};
-		0473A3AC25E56A130062FF61 /* FileManageViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0473A3BD25E56B010062FF61 /* FileManageMainViewController.swift */,
-				0473A3B325E56A8F0062FF61 /* FileManage.storyboard */,
-			);
-			path = FileManageViewController;
 			sourceTree = "<group>";
 		};
 		0473A3C525E56CD80062FF61 /* Common */ = {
@@ -140,9 +126,7 @@
 				0473A3A425E569490062FF61 /* Base */,
 				0473A39E25E569000062FF61 /* extension */,
 				0473A3AA25E569E80062FF61 /* LogInViewController */,
-				0473A3A925E569C90062FF61 /* SearchViewController */,
-				0473A3AB25E56A070062FF61 /* ARViewController */,
-				0473A3AC25E56A130062FF61 /* FileManageViewController */,
+				0473A3A925E569C90062FF61 /* MainViewController */,
 				0473A3C525E56CD80062FF61 /* Common */,
 			);
 			path = SneakersOutfitAR;
@@ -225,10 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */,
-				0473A3B425E56A8F0062FF61 /* FileManage.storyboard in Resources */,
-				0473A3AE25E56A770062FF61 /* Search.storyboard in Resources */,
+				0473A3AE25E56A770062FF61 /* ApplicationFlow.storyboard in Resources */,
 				04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */,
-				0473A3B125E56A820062FF61 /* AR.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0473A3BA25E56ADA0062FF61 /* ARCameraViewController.swift in Sources */,
+				045E00E025E6A50D00AC635D /* customTabBar.swift in Sources */,
 				04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */,
-				0473A3B725E56AB60062FF61 /* SearchMainViewController.swift in Sources */,
+				0473A3B725E56AB60062FF61 /* SearchViewController.swift in Sources */,
 				0473A3A625E5698B0062FF61 /* BaseViewController.swift in Sources */,
 				0473A3A025E5692B0062FF61 /* UIColor+Common.swift in Sources */,
 				04BA333F25DFE62900407C4B /* AppDelegate.swift in Sources */,
-				0473A3BE25E56B010062FF61 /* FileManageMainViewController.swift in Sources */,
+				0473A3BE25E56B010062FF61 /* FileStorageViewController.swift in Sources */,
+				0467E39525E6688900CACFED /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
