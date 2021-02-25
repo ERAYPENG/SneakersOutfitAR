@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FileStorageMainViewController: UIViewController {
+class FileStorageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

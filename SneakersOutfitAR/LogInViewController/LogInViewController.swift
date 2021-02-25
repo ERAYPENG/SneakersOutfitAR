@@ -11,7 +11,7 @@ import SnapKit
 class LogInViewController: BaseViewController {
     private var logoView: UIView = {
         let view = UIView()
-        let imageName = "logoIcon"
+        let imageName = "ic_logo"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image)
         view.addSubview(imageView)
