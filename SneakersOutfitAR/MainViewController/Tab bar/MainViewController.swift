@@ -30,13 +30,16 @@ class MainViewController: UIViewController {
 //MARK: Private
 extension MainViewController {
     private func setupUI() {
+        
+        
+        self.view.backgroundColor = .systemGroupedBackground
         let customTabBar = CustomTabBar()
         self.view.addSubview(customTabBar)
         
         //auto lay out
         customTabBar.snp.makeConstraints { (make) in
             make.leading.trailing.bottom.equalToSuperview()
-            make.height.equalTo(200)
+            make.height.equalTo(150)
         }
     }
 }
