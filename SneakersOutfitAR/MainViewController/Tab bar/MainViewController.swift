@@ -38,8 +38,8 @@ extension MainViewController {
         
         //auto lay out
         customTabBar.snp.makeConstraints { (make) in
-            make.leading.trailing.bottom.equalToSuperview()
-            make.height.equalTo(150)
+            make.leading.trailing.bottom.equalTo(self.view.safeAreaLayoutGuide)
+            make.height.equalTo(100)
         }
     }
 }
