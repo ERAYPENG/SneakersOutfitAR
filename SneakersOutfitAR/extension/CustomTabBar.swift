@@ -175,17 +175,29 @@ extension CustomTabBar {
         self.buttonAnimation(button: self.fileStorageButton, type: .end)
         self.arCameraButton.backgroundColor = .clear
         
+        let searchVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(withIdentifier: "SearchVC")
+        let searchVCNav = UINavigationController(rootViewController: searchVC)
+        self.window?.rootViewController = searchVCNav
+        
     }
     
     @objc private func userDidTouchUpInsideArCamera(sender: UIButton) {
         self.buttonAnimation(button: self.fileStorageButton, type: .end)
         self.buttonAnimation(button: self.searchButton, type: .end)
         sender.backgroundColor = .lightGray
+        
+        let aRCameraVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(withIdentifier: "ARCameraVC")
+        let aRCameraVCNav = UINavigationController(rootViewController: aRCameraVC)
+        self.window?.rootViewController = aRCameraVCNav
     }
 
     @objc private func userDidTouchUpInsideFileStorage(sender: UIButton) {
         self.buttonAnimation(button: sender, type: .start)
         self.buttonAnimation(button: self.searchButton, type: .end)
         self.arCameraButton.backgroundColor = .clear
+        
+        let fileStorageVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(withIdentifier: "FileStorageVC")
+        let fileStorageVCNav = UINavigationController(rootViewController: fileStorageVC)
+        self.window?.rootViewController = fileStorageVCNav
     }
 }

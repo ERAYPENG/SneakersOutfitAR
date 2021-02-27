@@ -11,7 +11,7 @@ class ARCameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .yellow
+        self.view.backgroundColor = .green
         // Do any additional setup after loading the view.
     }
     

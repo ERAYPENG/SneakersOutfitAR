@@ -24,6 +24,15 @@ class MainViewController: UIViewController {
         self.setupUI()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        let aRCameraVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(withIdentifier: "ARCameraVC")
+//        let aRCameraVCNav = UINavigationController(rootViewController: aRCameraVC)
+//        self.view.window?.rootViewController = aRCameraVCNav
+        
+        
+    }
 }
 
 
