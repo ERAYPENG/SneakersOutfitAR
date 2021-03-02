@@ -2,7 +2,7 @@
 //  BaseViewController.swift
 //  SneakersOutfitAR
 //
-//  Created by ERAY on 2021/2/23.
+//  Created by ERAY on 2021/2/24.
 //
 
 import UIKit
@@ -70,4 +70,6 @@ class BaseViewController: UIViewController {
         item1.customView = btn1
         return item1
     }
+    
 }
+

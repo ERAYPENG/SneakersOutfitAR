@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARCamera-->
+        <scene sceneID="HoE-pc-nrV">
+            <objects>
+                <viewController storyboardIdentifier="ARCameraVC" title="ARCamera" id="BT1-fB-Czb" customClass="ARCameraViewController" customModule="SneakersOutfitAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WNw-km-df5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pW-J0-4h1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="NXg-AL-HkB"/>
+                                    <constraint firstAttribute="width" constant="414" id="XJX-Gj-oLb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LzH-Oa-lA9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1pW-J0-4h1" firstAttribute="top" secondItem="LzH-Oa-lA9" secondAttribute="top" id="2JV-gZ-yH5"/>
+                            <constraint firstItem="1pW-J0-4h1" firstAttribute="trailing" secondItem="LzH-Oa-lA9" secondAttribute="trailing" id="CtL-ii-pQf"/>
+                            <constraint firstItem="1pW-J0-4h1" firstAttribute="leading" secondItem="LzH-Oa-lA9" secondAttribute="leading" id="WDj-uz-aQa"/>
+                            <constraint firstItem="1pW-J0-4h1" firstAttribute="centerX" secondItem="WNw-km-df5" secondAttribute="centerX" id="fs4-n7-whh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="MM5-1f-p8Q"/>
+                    <navigationItem key="navigationItem" id="RLI-co-NcV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOs-E2-GyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1978.2608695652175" y="610.71428571428567"/>
+        </scene>
+        <!--FileStorage-->
+        <scene sceneID="5gr-xJ-826">
+            <objects>
+                <viewController storyboardIdentifier="FileStorageVC" title="FileStorage" id="lss-mQ-Ivd" customClass="FileStorageViewController" customModule="SneakersOutfitAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKL-X8-J5P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8fC-LU-VpL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="rvE-Pg-Mrd"/>
+                    <navigationItem key="navigationItem" id="n81-zX-cV5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5H8-YG-6z5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154" y="623"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="sOq-Bn-XLz">
+            <objects>
+                <viewController storyboardIdentifier="SearchVC" title="Search" id="vZB-5e-C7j" customClass="SearchViewController" customModule="SneakersOutfitAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xQz-ya-hyG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U0h-IM-Rh2">
+                                <rect key="frame" x="0.0" y="333" width="414" height="415"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="415" id="PwB-Pn-m7p"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="searchRecommendCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchRecommendCell" id="k9Z-wK-nQo" customClass="SearchBarTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k9Z-wK-nQo" id="FCZ-BR-q59">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wGs-es-aVQ">
+                                <rect key="frame" x="0.0" y="253" width="414" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="UlC-sV-ctR"/>
+                                    <constraint firstAttribute="height" constant="80" id="jhz-D5-hAr"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5CD-h6-8bF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U0h-IM-Rh2" firstAttribute="top" secondItem="5CD-h6-8bF" secondAttribute="top" constant="289" id="88I-tU-411"/>
+                            <constraint firstItem="wGs-es-aVQ" firstAttribute="leading" secondItem="5CD-h6-8bF" secondAttribute="leading" id="DR1-gX-F8v"/>
+                            <constraint firstItem="U0h-IM-Rh2" firstAttribute="trailing" secondItem="5CD-h6-8bF" secondAttribute="trailing" id="F8F-Gh-6e1"/>
+                            <constraint firstItem="wGs-es-aVQ" firstAttribute="centerX" secondItem="xQz-ya-hyG" secondAttribute="centerX" id="Plq-Ip-2NS"/>
+                            <constraint firstItem="U0h-IM-Rh2" firstAttribute="centerX" secondItem="xQz-ya-hyG" secondAttribute="centerX" id="Z3E-VJ-iEg"/>
+                            <constraint firstItem="U0h-IM-Rh2" firstAttribute="leading" secondItem="5CD-h6-8bF" secondAttribute="leading" id="aqf-t8-oUz"/>
+                            <constraint firstItem="wGs-es-aVQ" firstAttribute="trailing" secondItem="5CD-h6-8bF" secondAttribute="trailing" id="iDy-FL-P2V"/>
+                            <constraint firstItem="U0h-IM-Rh2" firstAttribute="top" secondItem="wGs-es-aVQ" secondAttribute="bottom" id="tFC-WW-4Iv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="nQ5-QB-ZrQ"/>
+                    <navigationItem key="navigationItem" id="8kO-AD-WBC"/>
+                    <connections>
+                        <outlet property="searchBar" destination="wGs-es-aVQ" id="N4k-DW-gQc"/>
+                        <outlet property="searchRecommendTableView" destination="U0h-IM-Rh2" id="r6X-0B-V5p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUy-oD-AsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2849.275362318841" y="610.71428571428567"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="pLX-HA-blP">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="3aE-gl-Bds" customClass="MainViewController" customModule="SneakersOutfitAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ilZ-PJ-Unb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OGf-kn-hGq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Up-ct-ZVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1978" y="-126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

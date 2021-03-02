@@ -8,17 +8,18 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, UISceneDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = LogInViewController()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            let vc = LogInViewController()
         vc.view.backgroundColor = .systemGroupedBackground
-        self.window?.rootViewController = vc
-        self.window?.makeKeyAndVisible()
-        return true
+            window!.rootViewController = vc
+            window!.makeKeyAndVisible()
+            return true
     }
+
 }
 
