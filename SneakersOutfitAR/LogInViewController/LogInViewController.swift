@@ -168,8 +168,12 @@ extension LogInViewController {
 //MARK: Event
 extension LogInViewController {
     @objc private func didTouchUpInsideLogIn(sender: UIButton) {
-        let arVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(identifier: "Main") as! MainViewController
-        self.view.window?.rootViewController = arVC
+        
+        let vc = MainViewController()
+        vc.view.backgroundColor = .yellow
+        let keyWindow = UIApplication.shared.windows.first(where: \.isKeyWindow)
+        keyWindow?.rootViewController = vc
+        
     }
     
     @objc private func didTouchUpInsideForgotPasswards(sender: UIButton) {

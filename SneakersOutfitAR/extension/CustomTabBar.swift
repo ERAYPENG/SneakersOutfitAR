@@ -7,62 +7,64 @@
 
 import UIKit
 
-enum ButtonAnimationType {
-    case start
-    case end
-}
-
 class CustomTabBar: UIView {
-    let leftView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemGroupedBackground
-        return view
-    }()
+    weak var delegate: CustomTabBarDelegate?
     
-    let centerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemGroupedBackground
-        return view
-    }()
+    init(images: [UIImage]) {
+        super.init(frame: .zero)
+        if images.count != 3 { return }
+        self.setupView(with: images)
+    }
     
-    let rightView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemGroupedBackground
-        return view
-    }()
-    
-    
-    lazy var searchButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "ic_search"), for: .normal)
-        button.addTarget(self, action: #selector(userDidTouchUpInsideSearch), for: .touchUpInside)
-        return button
-    }()
-    
-    lazy var arCameraButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 72, height: 72))
-        button.layer.cornerRadius = button.frame.width / 2
-        button.layer.masksToBounds = true
-        let circleLayer = drawCircleRect(X: button.frame.midX, Y: button.frame.midY, radius: 36)
-        button.addSubview(circleLayer)
-        button.setImage(UIImage(named: "ic_person"), for: .normal)
-        button.addTarget(self, action: #selector(userDidTouchUpInsideArCamera), for: .touchUpInside)
-        return button
-    }()
-    
-    lazy var fileStorageButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "ic_fileStorage"), for: .normal)
-        button.addTarget(self, action: #selector(userDidTouchUpInsideFileStorage), for: .touchUpInside)
-        return button
-    }()
-    
-    
+    private func setupView(with images: [UIImage]) {
+        //fit 2 以上
+        var previousButton: UIButton = UIButton()
+        
+        for index in 0..<images.count {
+            
+            let currentButton = self.createButton(with: images[index])
+            currentButton.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            currentButton.tag = index
+            
+            currentButton.addTarget(self, action: #selector(createButtonTouchUpInside(_:)), for: .touchUpInside)
+            
+            
+            self.addSubview(currentButton)
+            
+            if (images.count % 2 == 1) && (index == images.count/2) {
+                currentButton.snp.makeConstraints { (make) in
+                    make.centerY.equalTo(self.snp.top)
+                    make.centerX.equalToSuperview()
+                    make.width.equalTo(previousButton)
+                    make.height.equalTo(previousButton)
+                }
+            } else if index <= images.count / 2 {
+                currentButton.snp.makeConstraints { (make) in
+                    make.top.equalToSuperview()
+                    make.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom)
+                    make.width.equalToSuperview().dividedBy(images.count)
+                    make.leading.equalToSuperview()
+                }
+            } else if index >= images.count / 2 {
+                currentButton.snp.makeConstraints { (make) in
+                    make.top.equalToSuperview()
+                    make.width.equalTo(previousButton)
+                    make.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom)
+                    make.leading.equalTo(previousButton.snp.trailing)
+                }
+            }
+            previousButton = currentButton
+            
+        }
+//        func customCenterButton() -> UIView {
+//            let view = UIView()
+//            return view
+//        }
+    }
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addCustomView()
     }
     
     required init?(coder: NSCoder) {
@@ -75,67 +77,20 @@ class CustomTabBar: UIView {
         super.draw(rect)
         
     }
-    
-    
 }
 
 
 //MARK: Private
 extension CustomTabBar {
-    private func addCustomView() {
-        self.backgroundColor = .clear
-//        self.layer.borderColor = UIColor.gray.cgColor
-//        self.layer.borderWidth = 5
-        self.searchButton.isExclusiveTouch = true
-        self.fileStorageButton.isExclusiveTouch = true
-        
-        self.addSubview(self.leftView)
-        self.addSubview(self.centerView)
-        self.addSubview(self.rightView)
-        self.leftView.addSubview(self.searchButton)
-        self.centerView.addSubview(self.arCameraButton)
-        self.rightView.addSubview(self.fileStorageButton)
-        
-        
-        //auto lay out
-        self.leftView.snp.makeConstraints { (make) in
-            make.height.equalToSuperview().dividedBy(2)
-            make.width.equalToSuperview().dividedBy(3)
-            make.leading.bottom.equalToSuperview()
-        }
-        
-        self.centerView.snp.makeConstraints { (make) in
-            make.height.equalToSuperview().dividedBy(2)
-            make.width.equalToSuperview().dividedBy(3)
-            make.center.bottom.equalToSuperview()
-        }
-        
-        self.rightView.snp.makeConstraints { (make) in
-            make.height.equalToSuperview().dividedBy(2)
-            make.width.equalToSuperview().dividedBy(3)
-            make.trailing.bottom.equalToSuperview()
-        }
-        
-        
-        self.searchButton.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-            make.width.height.equalTo(48)
-
-        }
-
-        self.arCameraButton.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.centerY.equalTo(self.centerView.snp.top)
-            make.width.height.equalTo(72)
-        }
-
-        self.fileStorageButton.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-            make.width.height.equalTo(48)
-        }
+    private func createButton(with image: UIImage) -> UIButton {
+        let button = UIButton()
+        button.backgroundColor = .lightGray
+        button.setImage(image, for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        return button
     }
     
-    private func buttonAnimation(button: UIButton, type: ButtonAnimationType) {
+    private func buttonAnimation(button: UIButton, type: CustomTabBarButtonAnimationType) {
         let buttonAnimaionUp = UIViewPropertyAnimator(duration: 0.3, curve: .linear) {
             button.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
             
@@ -149,13 +104,12 @@ extension CustomTabBar {
             buttonAnimaionUp.startAnimation()
         case .end:
             buttonAnimaionDown.startAnimation()
-            
         }
     }
     
-    private func drawCircleRect(X: CGFloat, Y: CGFloat, radius: CGFloat) -> UIView {
-        let view = UIView(frame: .zero)
-        let circlePath = UIBezierPath(arcCenter: CGPoint(x: X, y: Y), radius: radius, startAngle: 0.0, endAngle: 2.0 * .pi, clockwise: false)
+    private func drawCircleRect(center: CGPoint, radius: CGFloat) -> UIView {
+        let view = UIView()
+        let circlePath = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0.0, endAngle: 2.0 * .pi, clockwise: false)
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = circlePath.cgPath
         
@@ -170,34 +124,7 @@ extension CustomTabBar {
 
 //MARK: Event
 extension CustomTabBar {
-    @objc private func userDidTouchUpInsideSearch(sender: UIButton) {
-        self.buttonAnimation(button: sender, type: .start)
-        self.buttonAnimation(button: self.fileStorageButton, type: .end)
-        self.arCameraButton.backgroundColor = .clear
-        
-        let searchVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(withIdentifier: "SearchVC")
-        let searchVCNav = UINavigationController(rootViewController: searchVC)
-        self.window?.rootViewController = searchVCNav
-        
-    }
-    
-    @objc private func userDidTouchUpInsideArCamera(sender: UIButton) {
-        self.buttonAnimation(button: self.fileStorageButton, type: .end)
-        self.buttonAnimation(button: self.searchButton, type: .end)
-        sender.backgroundColor = .lightGray
-        
-        let aRCameraVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(withIdentifier: "ARCameraVC")
-        let aRCameraVCNav = UINavigationController(rootViewController: aRCameraVC)
-        self.window?.rootViewController = aRCameraVCNav
-    }
-
-    @objc private func userDidTouchUpInsideFileStorage(sender: UIButton) {
-        self.buttonAnimation(button: sender, type: .start)
-        self.buttonAnimation(button: self.searchButton, type: .end)
-        self.arCameraButton.backgroundColor = .clear
-        
-        let fileStorageVC = UIStoryboard(name: "ApplicationFlow", bundle: nil).instantiateViewController(withIdentifier: "FileStorageVC")
-        let fileStorageVCNav = UINavigationController(rootViewController: fileStorageVC)
-        self.window?.rootViewController = fileStorageVCNav
+    @objc private func createButtonTouchUpInside(_ sender: UIButton) {
+        self.delegate?.customTabBarDidTouchUpInside(index: sender.tag)
     }
 }

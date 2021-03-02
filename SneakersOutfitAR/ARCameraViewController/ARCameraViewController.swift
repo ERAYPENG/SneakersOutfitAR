@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ARCameraViewController: UIViewController {
+class ARCameraViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

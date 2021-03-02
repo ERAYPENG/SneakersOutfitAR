@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FileStorageViewController: UIViewController {
+class FileStorageViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +23,6 @@ class FileStorageViewController: UIViewController {
 extension FileStorageViewController {
     private func setupUI() {
         self.view.backgroundColor = .yellow
-        let customTabBar = CustomTabBar()
-        self.view.addSubview(customTabBar)
         
-        //auto lay out
-        customTabBar.snp.makeConstraints { (make) in
-            make.leading.trailing.bottom.equalTo(self.view.safeAreaLayoutGuide)
-            make.height.equalTo(100)
-        }
     }
 }

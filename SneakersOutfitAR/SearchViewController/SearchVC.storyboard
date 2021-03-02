@@ -8,55 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ARCamera-->
-        <scene sceneID="HoE-pc-nrV">
-            <objects>
-                <viewController storyboardIdentifier="ARCameraVC" title="ARCamera" id="BT1-fB-Czb" customClass="ARCameraViewController" customModule="SneakersOutfitAR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WNw-km-df5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pW-J0-4h1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="280"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="NXg-AL-HkB"/>
-                                    <constraint firstAttribute="width" constant="414" id="XJX-Gj-oLb"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="LzH-Oa-lA9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="1pW-J0-4h1" firstAttribute="top" secondItem="LzH-Oa-lA9" secondAttribute="top" id="2JV-gZ-yH5"/>
-                            <constraint firstItem="1pW-J0-4h1" firstAttribute="trailing" secondItem="LzH-Oa-lA9" secondAttribute="trailing" id="CtL-ii-pQf"/>
-                            <constraint firstItem="1pW-J0-4h1" firstAttribute="leading" secondItem="LzH-Oa-lA9" secondAttribute="leading" id="WDj-uz-aQa"/>
-                            <constraint firstItem="1pW-J0-4h1" firstAttribute="centerX" secondItem="WNw-km-df5" secondAttribute="centerX" id="fs4-n7-whh"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="MM5-1f-p8Q"/>
-                    <navigationItem key="navigationItem" id="RLI-co-NcV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AOs-E2-GyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1978.2608695652175" y="610.71428571428567"/>
-        </scene>
-        <!--FileStorage-->
-        <scene sceneID="5gr-xJ-826">
-            <objects>
-                <viewController storyboardIdentifier="FileStorageVC" title="FileStorage" id="lss-mQ-Ivd" customClass="FileStorageViewController" customModule="SneakersOutfitAR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fKL-X8-J5P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8fC-LU-VpL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rvE-Pg-Mrd"/>
-                    <navigationItem key="navigationItem" id="n81-zX-cV5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5H8-YG-6z5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1154" y="623"/>
-        </scene>
         <!--Search-->
         <scene sceneID="sOq-Bn-XLz">
             <objects>
@@ -113,22 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUy-oD-AsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2849.275362318841" y="610.71428571428567"/>
-        </scene>
-        <!--Main View Controller-->
-        <scene sceneID="pLX-HA-blP">
-            <objects>
-                <viewController storyboardIdentifier="Main" id="3aE-gl-Bds" customClass="MainViewController" customModule="SneakersOutfitAR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ilZ-PJ-Unb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="OGf-kn-hGq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Up-ct-ZVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1978" y="-126"/>
+            <point key="canvasLocation" x="-1955" y="59"/>
         </scene>
     </scenes>
     <resources>

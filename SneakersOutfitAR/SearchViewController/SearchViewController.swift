@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: BaseViewController {
 
     @IBOutlet weak var searchRecommendTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -50,6 +50,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
 //MARK: Private
 extension SearchViewController {
     private func setupUI() {
+        self.view.backgroundColor = .purple
         self.searchBar.searchBarStyle = .minimal
         for subView in self.searchBar.subviews where subView is UITextField {
             subView.frame = CGRect(x: 0, y: 0, width: subView.frame.size.width, height: 80)
@@ -58,13 +59,6 @@ extension SearchViewController {
         self.searchRecommendTableView.dataSource = self
         self.searchRecommendTableView.delegate = self
         self.searchRecommendTableView.register(SearchBarTableViewCell.self, forCellReuseIdentifier: "searchRecommendCell")
-        let customTabBar = CustomTabBar()
-        self.view.addSubview(customTabBar)
         
-        //auto lay out
-        customTabBar.snp.makeConstraints { (make) in
-            make.leading.trailing.bottom.equalTo(self.view.safeAreaLayoutGuide)
-            make.height.equalTo(100)
-        }
     }
 }

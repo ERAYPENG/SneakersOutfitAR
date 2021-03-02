@@ -10,7 +10,7 @@
 		0467E39525E6688900CACFED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467E39425E6688900CACFED /* MainViewController.swift */; };
 		0473A3A025E5692B0062FF61 /* UIColor+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A39F25E5692B0062FF61 /* UIColor+Common.swift */; };
 		0473A3A625E5698B0062FF61 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3A525E5698B0062FF61 /* BaseViewController.swift */; };
-		0473A3AE25E56A770062FF61 /* ApplicationFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3AD25E56A770062FF61 /* ApplicationFlow.storyboard */; };
+		0473A3AE25E56A770062FF61 /* SearchVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473A3AD25E56A770062FF61 /* SearchVC.storyboard */; };
 		0473A3B725E56AB60062FF61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3B625E56AB60062FF61 /* SearchViewController.swift */; };
 		0473A3BA25E56ADA0062FF61 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */; };
 		0473A3BE25E56B010062FF61 /* FileStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473A3BD25E56B010062FF61 /* FileStorageViewController.swift */; };
@@ -20,6 +20,9 @@
 		04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA334225DFE62900407C4B /* LogInViewController.swift */; };
 		04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334725DFE62B00407C4B /* Assets.xcassets */; };
 		04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA334925DFE62B00407C4B /* LaunchScreen.storyboard */; };
+		04D11B2225EDF6FC0099B7E7 /* SneakerOutfitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D11B2125EDF6FC0099B7E7 /* SneakerOutfitModel.swift */; };
+		04D11B2625EE48830099B7E7 /* ARCameraVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D11B2525EE48830099B7E7 /* ARCameraVC.storyboard */; };
+		04D11B2925EE48B10099B7E7 /* FileStorageVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D11B2825EE48B10099B7E7 /* FileStorageVC.storyboard */; };
 		A9DE82CB1B85CDE9BC843703 /* Pods_SneakersOutfitAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6C41A902187C1B9DB19B43 /* Pods_SneakersOutfitAR.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +30,7 @@
 		0467E39425E6688900CACFED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0473A39F25E5692B0062FF61 /* UIColor+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Common.swift"; sourceTree = "<group>"; };
 		0473A3A525E5698B0062FF61 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		0473A3AD25E56A770062FF61 /* ApplicationFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplicationFlow.storyboard; sourceTree = "<group>"; };
+		0473A3AD25E56A770062FF61 /* SearchVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchVC.storyboard; sourceTree = "<group>"; };
 		0473A3B625E56AB60062FF61 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraViewController.swift; sourceTree = "<group>"; };
 		0473A3BD25E56B010062FF61 /* FileStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +42,9 @@
 		04BA334725DFE62B00407C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BA334A25DFE62B00407C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BA334C25DFE62B00407C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D11B2125EDF6FC0099B7E7 /* SneakerOutfitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerOutfitModel.swift; sourceTree = "<group>"; };
+		04D11B2525EE48830099B7E7 /* ARCameraVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARCameraVC.storyboard; sourceTree = "<group>"; };
+		04D11B2825EE48B10099B7E7 /* FileStorageVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileStorageVC.storyboard; sourceTree = "<group>"; };
 		066B1C176691B661D7758F46 /* Pods-SneakersOutfitAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersOutfitAR.release.xcconfig"; path = "Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR.release.xcconfig"; sourceTree = "<group>"; };
 		543EA6D715C611831DD377E5 /* Pods-SneakersOutfitAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersOutfitAR.debug.xcconfig"; path = "Target Support Files/Pods-SneakersOutfitAR/Pods-SneakersOutfitAR.debug.xcconfig"; sourceTree = "<group>"; };
 		BC6C41A902187C1B9DB19B43 /* Pods_SneakersOutfitAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakersOutfitAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +111,7 @@
 			children = (
 				0473A3B625E56AB60062FF61 /* SearchViewController.swift */,
 				047FC04925EA6DDA00884FA7 /* SearchBarTableViewCell.swift */,
+				0473A3AD25E56A770062FF61 /* SearchVC.storyboard */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -113,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0473A3B925E56ADA0062FF61 /* ARCameraViewController.swift */,
+				04D11B2525EE48830099B7E7 /* ARCameraVC.storyboard */,
 			);
 			path = ARCameraViewController;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				0473A3BD25E56B010062FF61 /* FileStorageViewController.swift */,
+				04D11B2825EE48B10099B7E7 /* FileStorageVC.storyboard */,
 			);
 			path = FileStorageViewController;
 			sourceTree = "<group>";
@@ -153,10 +162,18 @@
 				047FC04625EA6D0C00884FA7 /* SearchViewController */,
 				047FC04725EA6D2200884FA7 /* ARCameraViewController */,
 				047FC04825EA6D3D00884FA7 /* FileStorageViewController */,
-				0473A3AD25E56A770062FF61 /* ApplicationFlow.storyboard */,
+				04D11B2025EDF6D20099B7E7 /* Model */,
 				0473A3C525E56CD80062FF61 /* Common */,
 			);
 			path = SneakersOutfitAR;
+			sourceTree = "<group>";
+		};
+		04D11B2025EDF6D20099B7E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04D11B2125EDF6FC0099B7E7 /* SneakerOutfitModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		58DF665BF52B042CE93F70A6 /* Pods */ = {
@@ -236,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BA334B25DFE62B00407C4B /* LaunchScreen.storyboard in Resources */,
-				0473A3AE25E56A770062FF61 /* ApplicationFlow.storyboard in Resources */,
+				0473A3AE25E56A770062FF61 /* SearchVC.storyboard in Resources */,
+				04D11B2625EE48830099B7E7 /* ARCameraVC.storyboard in Resources */,
 				04BA334825DFE62B00407C4B /* Assets.xcassets in Resources */,
+				04D11B2925EE48B10099B7E7 /* FileStorageVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D11B2225EDF6FC0099B7E7 /* SneakerOutfitModel.swift in Sources */,
 				0473A3BA25E56ADA0062FF61 /* ARCameraViewController.swift in Sources */,
 				04BA334325DFE62900407C4B /* LogInViewController.swift in Sources */,
 				0473A3B725E56AB60062FF61 /* SearchViewController.swift in Sources */,
