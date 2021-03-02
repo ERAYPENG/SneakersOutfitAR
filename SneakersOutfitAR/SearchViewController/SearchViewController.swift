@@ -10,15 +10,14 @@ import UIKit
 class SearchViewController: UIViewController {
 
     @IBOutlet weak var searchRecommendTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        self.view.backgroundColor = .systemGroupedBackground
         setupUI()
-        // Do any additional setup after loading the view.
     }
-    
 
     
 
@@ -51,7 +50,11 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
 //MARK: Private
 extension SearchViewController {
     private func setupUI() {
-        
+        self.searchBar.searchBarStyle = .minimal
+        for subView in self.searchBar.subviews where subView is UITextField {
+            subView.frame = CGRect(x: 0, y: 0, width: subView.frame.size.width, height: 80)
+        }
+        self.searchRecommendTableView.backgroundColor = .systemGroupedBackground
         self.searchRecommendTableView.dataSource = self
         self.searchRecommendTableView.delegate = self
         self.searchRecommendTableView.register(SearchBarTableViewCell.self, forCellReuseIdentifier: "searchRecommendCell")

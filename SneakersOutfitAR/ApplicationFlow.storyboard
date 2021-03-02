@@ -83,10 +83,10 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wGs-es-aVQ">
-                                <rect key="frame" x="0.0" y="277" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="253" width="414" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="UlC-sV-ctR"/>
-                                    <constraint firstAttribute="height" constant="56" id="jhz-D5-hAr"/>
+                                    <constraint firstAttribute="height" constant="80" id="jhz-D5-hAr"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -107,6 +107,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="nQ5-QB-ZrQ"/>
                     <navigationItem key="navigationItem" id="8kO-AD-WBC"/>
                     <connections>
+                        <outlet property="searchBar" destination="wGs-es-aVQ" id="N4k-DW-gQc"/>
                         <outlet property="searchRecommendTableView" destination="U0h-IM-Rh2" id="r6X-0B-V5p"/>
                     </connections>
                 </viewController>

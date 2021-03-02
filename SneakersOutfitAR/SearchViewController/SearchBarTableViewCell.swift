@@ -57,6 +57,7 @@ class SearchBarTableViewCell: UITableViewCell {
 //MARK: Private
 extension SearchBarTableViewCell {
     private func setupUI() {
+        self.backgroundColor = .systemGroupedBackground
         self.contentView.addSubview(self.slotView)
         self.slotView.addSubview(self.searchBarRecommendLabel)
         self.contentView.addSubview(self.bottomLine)

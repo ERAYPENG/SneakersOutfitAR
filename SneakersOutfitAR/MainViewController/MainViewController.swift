@@ -44,6 +44,7 @@ extension MainViewController {
         self.view.backgroundColor = .systemGroupedBackground
         let customTabBar = CustomTabBar()
         self.view.addSubview(customTabBar)
+//        self.view.window?.addSubview(customTabBar)
         
         //auto lay out
         customTabBar.snp.makeConstraints { (make) in
